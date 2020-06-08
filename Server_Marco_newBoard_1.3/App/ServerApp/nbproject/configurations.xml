@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../ComPort.h</itemPath>
+      <itemPath>../Flex333.h</itemPath>
+      <itemPath>../HD44780.h</itemPath>
+      <itemPath>../MeCom.h</itemPath>
+      <itemPath>../SCC2692.H</itemPath>
+      <itemPath>../ad595.h</itemPath>
+      <itemPath>../ad7714.h</itemPath>
+      <itemPath>../addc.h</itemPath>
+      <itemPath>../app.h</itemPath>
+      <itemPath>../aw.h</itemPath>
+      <itemPath>../bb7614.h</itemPath>
+      <itemPath>../board.h</itemPath>
+      <itemPath>../boot.h</itemPath>
+      <itemPath>../button.h</itemPath>
+      <itemPath>../buzzer.h</itemPath>
+      <itemPath>../calibration.h</itemPath>
+      <itemPath>../dac8532.h</itemPath>
+      <itemPath>../ext_calib.h</itemPath>
+      <itemPath>../fan.h</itemPath>
+      <itemPath>../i2c.h</itemPath>
+      <itemPath>../include.h</itemPath>
+      <itemPath>../inout.h</itemPath>
+      <itemPath>../lcd.h</itemPath>
+      <itemPath>../opt.h</itemPath>
+      <itemPath>../options.h</itemPath>
+      <itemPath>../peltier.h</itemPath>
+      <itemPath>../pins.h</itemPath>
+      <itemPath>../proto.h</itemPath>
+      <itemPath>../protocole_fast.h</itemPath>
+      <itemPath>../pttemp.h</itemPath>
+      <itemPath>../resource.h</itemPath>
+      <itemPath>../sensors.h</itemPath>
+      <itemPath>../shared.h</itemPath>
+      <itemPath>../ssj.h</itemPath>
+      <itemPath>../vardef.h</itemPath>
+      <itemPath>../web.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../HD44780.c</itemPath>
+      <itemPath>../ad595.c</itemPath>
+      <itemPath>../ad7714.c</itemPath>
+      <itemPath>../addc.c</itemPath>
+      <itemPath>../aw.c</itemPath>
+      <itemPath>../board.c</itemPath>
+      <itemPath>../boarddef.c</itemPath>
+      <itemPath>../boot.c</itemPath>
+      <itemPath>../button.c</itemPath>
+      <itemPath>../buzzer.c</itemPath>
+      <itemPath>../calibration.c</itemPath>
+      <itemPath>../conv_ascii.c</itemPath>
+      <itemPath>../dac8532.c</itemPath>
+      <itemPath>../ext_calib.c</itemPath>
+      <itemPath>../fan.c</itemPath>
+      <itemPath>../helpers.c</itemPath>
+      <itemPath>../i2c.c</itemPath>
+      <itemPath>../lcd.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>../main.c</itemPath>
+      <itemPath>../noyau_temps.c</itemPath>
+      <itemPath>../oldmain.c</itemPath>
+      <itemPath>../opt.c</itemPath>
+      <itemPath>../peltier.c</itemPath>
+      <itemPath>../pttemp.c</itemPath>
+      <itemPath>../sensors.c</itemPath>
+      <itemPath>../shared.c</itemPath>
+      <itemPath>../ssj.c</itemPath>
+      <itemPath>testVALMIR.c</itemPath>
+      <itemPath>../vardef.c</itemPath>
+      <itemPath>../web.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="../ComPort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Flex333.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../HD44780.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../HD44780.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../MeCom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../SCC2692.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ad595.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ad595.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ad7714.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ad7714.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../addc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../addc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../app.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../aw.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../aw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../bb7614.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../board.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../board.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../boarddef.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../boot.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../boot.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../button.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../button.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../buzzer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../buzzer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../calibration.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../calibration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../conv_ascii.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../dac8532.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../dac8532.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ext_calib.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ext_calib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../fan.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../fan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../helpers.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../i2c.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../i2c.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../include.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../inout.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../lcd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../lcd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../noyau_temps.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../oldmain.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../opt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../opt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../options.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../peltier.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../peltier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../pins.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../proto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../protocole_fast.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../pttemp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../pttemp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../sensors.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../sensors.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../shared.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../shared.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ssj.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ssj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../vardef.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../vardef.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../web.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../web.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="testVALMIR.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../ComPort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Flex333.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../HD44780.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../HD44780.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../MeCom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../SCC2692.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ad595.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ad595.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ad7714.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ad7714.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../addc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../addc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../app.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../aw.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../aw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../bb7614.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../board.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../board.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../boarddef.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../boot.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../boot.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../button.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../button.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../buzzer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../buzzer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../calibration.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../calibration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../conv_ascii.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../dac8532.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../dac8532.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ext_calib.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ext_calib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../fan.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../fan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../helpers.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../i2c.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../i2c.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../include.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../inout.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../lcd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../lcd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../noyau_temps.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../oldmain.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../opt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../opt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../options.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../peltier.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../peltier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../pins.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../proto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../protocole_fast.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../pttemp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../pttemp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../sensors.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../sensors.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../shared.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../shared.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ssj.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../ssj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../vardef.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../vardef.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../web.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../web.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="testVALMIR.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

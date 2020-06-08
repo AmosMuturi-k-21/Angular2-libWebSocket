@@ -1,0 +1,10 @@
+1.  please go to on your project root folder and paste angular-cli.json file and delete package-lock.json file.
+2.  If node.js is not installed on your PC, download node.js and install.
+3.  please go to on your project root folder on cmd and run "npm install".
+4.  and then run following commands.
+        npm uninstall -g angular-cli @angular/cli
+        npm cache clean --force
+        npm install -g @angular/cli
+5.  run "npm start"
+6.  run "ng build"
+Then you can see dist folder on your project folder.

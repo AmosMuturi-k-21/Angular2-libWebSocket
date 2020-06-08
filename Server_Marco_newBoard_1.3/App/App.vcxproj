@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="copyOnly|ARM">
+      <Configuration>copyOnly</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1a9bda76-8194-46fd-911e-a16f1ec4b8c8}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>App</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Raspberry</TargetLinuxPlatform>
+    <LinuxProjectType>{8748239F-558C-44D1-944B-07B09C35B330}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='copyOnly|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <RemotePostBuildEventUseInBuild>false</RemotePostBuildEventUseInBuild>
+    <LibraryPath>
+    </LibraryPath>
+    <SourcePath>
+    </SourcePath>
+    <IncludePath>C:\cprogs\theo\Server_Marco_newBoard_1.3\App\INCLUDE\include;C:\cprogs\theo\Server_Marco_newBoard_1.3\App\ComPort;C:\cprogs\theo\Server_Marco_newBoard_1.3\App\MeComAPI;$(IncludePath);$(SenseIncludePath);C:\Users\crist\Dropbox\Lavori freelancer\pi2 mirror detect fog\app\App\App\INCLUDE\include;C:\Users\crist\Dropbox\Lavori freelancer\pi2 mirror detect fog\app\App\App\INCLUDE\local</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='copyOnly|ARM'">
+    <RemotePostBuildEventUseInBuild>false</RemotePostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>C:\Program Files\Windows Kits\10\Include\10.0.17134.0\um;$(WindowsSDK_IncludePath);$(VC_IncludePath);$(IncludePath);$(SenseIncludePath);$(ISenseIncludePath);C:\Users\jtbus\Documents\Shan Song\Server_Apr8\Server\App\INCLUDE\include;C:\Users\crist\Dropbox\Lavori freelancer\pi2 mirror detect fog\app\App\App\INCLUDE\include;C:\Users\crist\Dropbox\Lavori freelancer\pi2 mirror detect fog\app\App\App\INCLUDE\local</IncludePath>
+    <ProjectPublicIncludePath>
+    </ProjectPublicIncludePath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi;pthread;websockets</LibraryDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='copyOnly|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi;pthread</LibraryDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
+      <SharedLibrarySearchPath>%(SharedLibrarySearchPath);/usr/local/lib;</SharedLibrarySearchPath>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>gpio export 17 out</Command>
+      <Message>export pin 17 using the gpio utility so that we can execute the blink program without sudo</Message>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <AdditionalIncludeDirectories>/usr/include;$(RemoteProjectDir)/INCLUDE/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_GNU_SOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ad595.c" />
+    <ClCompile Include="ad7714.c" />
+    <ClCompile Include="addc.c" />
+    <ClCompile Include="aw.c" />
+    <ClCompile Include="board.c" />
+    <ClCompile Include="boarddef.c" />
+    <ClCompile Include="boot.c" />
+    <ClCompile Include="button.c" />
+    <ClCompile Include="buzzer.c" />
+    <ClCompile Include="calibration.c" />
+    <ClCompile Include="ComPort\ComPort_Linux.c" />
+    <ClCompile Include="conv_ascii.c" />
+    <ClCompile Include="ext_calib.c" />
+    <ClCompile Include="fan.c" />
+    <ClCompile Include="HD44780.c" />
+    <ClCompile Include="helpers.c" />
+    <ClCompile Include="i2c.c" />
+    <ClCompile Include="ini_file.c" />
+    <ClCompile Include="lcd.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="MeComAPI\MePort_Linux.c" />
+    <ClCompile Include="MeComAPI\private\MeCom.c" />
+    <ClCompile Include="MeComAPI\private\MeCRC16.c" />
+    <ClCompile Include="MeComAPI\private\MeFrame.c" />
+    <ClCompile Include="MeComAPI\private\MeInt.c" />
+    <ClCompile Include="MeComAPI\private\MeVarConv.c" />
+    <ClCompile Include="noyau_temps.c" />
+    <ClCompile Include="oldmain.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opt.c" />
+    <ClCompile Include="peltier.c" />
+    <ClCompile Include="pttemp.c" />
+    <ClCompile Include="sensors.c" />
+    <ClCompile Include="shared.c" />
+    <ClCompile Include="ssj.c" />
+    <ClCompile Include="vardef.c" />
+    <ClCompile Include="web.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ad595.h" />
+    <ClInclude Include="ad7714.h" />
+    <ClInclude Include="addc.h" />
+    <ClInclude Include="app.h" />
+    <ClInclude Include="aw.h" />
+    <ClInclude Include="bb7614.h" />
+    <ClInclude Include="boot.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="buzzer.h" />
+    <ClInclude Include="board.h" />
+    <ClInclude Include="calibration.h" />
+    <ClInclude Include="ComPort\ComPort.h" />
+    <ClInclude Include="ext_calib.h" />
+    <ClInclude Include="fan.h" />
+    <ClInclude Include="HD44780.h" />
+    <ClInclude Include="i2c.h" />
+    <ClInclude Include="include.h" />
+    <ClInclude Include="inout.h" />
+    <ClInclude Include="lcd.h" />
+    <ClInclude Include="MeComAPI\MeCom.h" />
+    <ClInclude Include="MeComAPI\MePort.h" />
+    <ClInclude Include="MeComAPI\private\MeCRC16.h" />
+    <ClInclude Include="MeComAPI\private\MeFrame.h" />
+    <ClInclude Include="MeComAPI\private\MeInt.h" />
+    <ClInclude Include="MeComAPI\private\MeVarConv.h" />
+    <ClInclude Include="opt.h" />
+    <ClInclude Include="options.h" />
+    <ClInclude Include="peltier.h" />
+    <ClInclude Include="pins.h" />
+    <ClInclude Include="proto.h" />
+    <ClInclude Include="protocole_fast.h" />
+    <ClInclude Include="pttemp.h" />
+    <ClInclude Include="SCC2692.H" />
+    <ClInclude Include="sensors.h" />
+    <ClInclude Include="shared.h" />
+    <ClInclude Include="ssj.h" />
+    <ClInclude Include="vardef.h" />
+    <ClInclude Include="web.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <SharedLibrarySearchPath>%(SharedLibrarySearchPath);/usr/local/lib;</SharedLibrarySearchPath>
+      <AdditionalOptions>-D_GNU_SOURCE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+    </ClCompile>
+    <ClCompile>
+      <CppLanguageStandard>gnu++11</CppLanguageStandard>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

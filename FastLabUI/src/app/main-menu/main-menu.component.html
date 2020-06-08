@@ -1,0 +1,56 @@
+
+
+<div class="col-xs-12">
+  <div class="row">
+    <div class="col-xs-2 col-lg-2"></div> <a routerLink="/mesurement" ng-reflect-router-link="/mesurement" >
+    <div class="col-xs-8 col-lg-8" tabindex="1" #b1>
+      <h2 class="text-center" >{{lang.Language.main_menu_btn_mesure}}<img draggable="false" src="\assets\img\Aw.png" alt="" ></h2>
+    </div></a>
+    <div class="col-xs-2"></div>
+  </div>
+
+       <div class="row">
+
+      <div class="col-xs-2"></div>
+         <a routerLink="/list" >
+      <div class="col-xs-8" tabindex="2" #b2>
+        <h2 class="text-center" >{{lang.Language.main_menu_btn_list}}<img draggable="false" src="\assets\img\list.png" alt=""></h2>
+      </div></a>
+         <div class="col-xs-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 " tabindex="3" routerLink="/calibration" #b3>
+        <h2 class="text-center"  >{{lang.Language.main_menu_btn_calibration}}<img draggable="false" src="\assets\img\calibration.png" alt=""></h2>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+
+  <div class="row" [ngClass]="{hidden:hideMenu()}">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8 " tabindex="3" routerLink="/debug" #bdebug>
+      <h2 class="text-center"  >Debug<img draggable="false" src="\assets\img\calibration.png" alt=""></h2>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+    <div class="row ">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8" tabindex="4" routerLink="/options" #b4>
+        <h2 class="text-center"  >{{lang.Language.main_menu_btn_options}}<img draggable="false" src="\assets\img\impostazioni.png" alt=""></h2>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+
+  <div class="row last">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8" tabindex="5" routerLink="/advanced" #b5>
+      <h2 class="text-center"  >{{lang.Language.main_menu_btn_advance}}<img draggable="false" src="\assets\img\impostazioni.png" alt=""></h2>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,10 @@
+#@lxpanel --profile LXDE-pi
+#@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+#@point-rpi
+@xdotool mousemove 800 480
+@xset s off
+@xset -dpms
+@xset s noblank
+@/home/pi/start_touch
+@chromium-browser --disable-session-restore --incognito --kiosk http://localhost:3000/

@@ -1,0 +1,29 @@
+<div class="col-md-3 col-lg-4"></div>
+<div class="col-md-6 col-lg-4">
+
+  <div id="containerScreen" class="col-sm-12 col-md-12 col-lg-12">
+<div *ngIf="!hideLogo" class="backgroundBoot">
+  <img draggable="false" src="/assets/img/logo.png" class="logoBoot" alt="">
+</div>
+
+    <div *ngIf="!connected" class="col-xs-12" style="background-color: white">
+      <a href="http://www.gbxonline.com/">
+        <img draggable="false" *ngIf="hideLogo" src="/assets/img/logo.png" class="img-responsive logo" alt="">
+      </a>
+    </div>
+
+      <div *ngIf="connected" class="connetionWarnBG col-sm-12 col-md-12 col-lg-12">
+        <i class="fa fa-exclamation-triangle connetionWarnIco " aria-hidden="true"></i>
+        <h1 class="connetionWarn">CONNECTION LOST<br>reconnecting...</h1>
+      </div>
+
+    <router-outlet [ngClass]="{'hidden':connected}"></router-outlet>
+
+    <!--DEBUG CONSOLE-->
+    <p class="console" [ngClass]="{'hidden':!showConsole}" #console>{{this.KeyList}}</p>
+    <!-- <span class="blinking-cursor">|</span> -->
+
+</div>
+</div>
+
+

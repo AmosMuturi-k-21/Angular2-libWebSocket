@@ -1,0 +1,71 @@
+<app-alerts
+  *ngIf="alert === true"
+  [alertMsg]="alertMsg"
+  [alertBtn]="alertBtn"
+  [salts]="alertSalt"
+  (ok)="onOk($event)"
+  (cancel)="onCancel($event)"
+  (salt)="onSalt($event)"
+>
+</app-alerts>
+
+
+
+<div   class="col-xs-12 datacon">
+<div class="row">
+  <div class="col-xs-6 inline">
+    <h1 class="title">{{lang.Language.data_waterA}}</h1>
+    <!-- <label for="">{{lang.Language.data_now}}</label> -->
+    <td class="col-xs-12 text-center databox aw">{{(rpi.currentAw>1000?1.000:rpi.currentAw/1000) | number : '1.3-3'}}<p class="Utext"></p></td>
+  </div><div class="col-xs-6 inline">
+  <h1 class="title">{{lang.Language.data_surface}}</h1>
+  <!-- <label for="">{{lang.Language.data_now}}</label> -->
+  <div class="col-xs-12 text-center databox tsurface">{{rpi.rpiData.t_surface | number : '1.2-2'}}<p class="Utext">°C</p></div>
+</div>
+</div>
+</div>
+
+<div *ngIf="store.sampleSaltValue"  class="col-xs-12 datacon">
+  <div class="row">
+    <div class="col-xs-6 inline">
+      <h1 class="title">{{lang.Language.calib_txt_aw_calc}}</h1>
+      <!-- <label for="">{{lang.Language.data_now}}</label> -->
+      <td class="col-xs-12 text-center databox aw">{{store.calibAw/1000 | number : '1.3-3'}}<p class="Utext"></p></td>
+    </div><div class="col-xs-6 inline">
+    <h1 class="title">{{lang.Language.calib_txt_aw_salt}}</h1>
+    <!-- <label for="">{{lang.Language.data_now}}</label> -->
+    <div class="col-xs-12 text-center databox tsurface">{{store.sampleSaltValue/1000 | number : '1.3-3'}}</div>
+  </div>
+  </div>
+</div>
+
+<div *ngIf="store.sampleSaltValue2"  class="col-xs-12 datacon">
+  <div class="row">
+    <div class="col-xs-6 inline">
+      <h1 class="title">{{lang.Language.calib_txt_aw_calc}}</h1>
+      <!-- <label for="">{{lang.Language.data_now}}</label> -->
+      <td class="col-xs-12 text-center databox aw">{{store.calibAw2/1000 | number : '1.3-3'}}<p class="Utext"></p></td>
+    </div><div class="col-xs-6 inline">
+    <h1 class="title">{{lang.Language.calib_txt_aw_salt}}</h1>
+    <!-- <label for="">{{lang.Language.data_now}}</label> -->
+    <div class="col-xs-12 text-center databox tsurface">{{store.sampleSaltValue2/1000 | number : '1.3-3'}}</div>
+  </div>
+  </div>
+</div>
+
+<div class="col-xs-2"></div>
+<div class="col-xs-8">
+<h2 class="text-center">{{calibrationText}}</h2>
+</div>
+
+  <div class="col-xs-12 col-lg-12 dataconW">
+    <table class="col-xs-12 col-lg-12">
+      <tr>
+        <td class="col-xs-6 text-center start" (click)="onCalibration()" appStartBtn tabindex="1" #b11><h2>{{measureButton}}</h2></td>
+        <td class="col-xs-6 text-center mainMenu" routerLink="/menu" tabindex="2" #b22><h2>{{lang.Language.btn_menu}}</h2></td>
+      </tr>
+    </table>
+  </div>
+
+
+

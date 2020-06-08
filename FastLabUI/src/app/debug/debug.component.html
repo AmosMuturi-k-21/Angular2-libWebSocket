@@ -1,0 +1,166 @@
+
+<div class="col-12">
+
+  <form action="" [formGroup]="calibration">
+    <div class="col-xs-6 col-lg-6  datacon">
+      <div class="col-xs-12 col-lg-12">
+        <h1 class="title inline">{{lang.Language.calib_aw_M}} 1</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="aw_mes_1">
+      </div>
+      <div class="col-xs-12 col-lg-12" style="margin-top: 10px">
+        <h1 class="title inline">{{lang.Language.calib_aw_R}} 1</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="aw_rech_1">
+      </div>
+      <div class="col-xs-12 col-lg-12" style="margin-top: 10px">
+        <h1 class="title inline">{{lang.Language.data_surface}} 1</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="tsurf_1">
+      </div>
+    </div>
+    <div class="col-xs-6 col-lg-6  datacon">
+      <div class="col-xs-12 col-lg-12">
+        <h1 class="title inline">{{lang.Language.calib_aw_M}} 2</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="aw_mes_2">
+      </div>
+      <div class="col-xs-12 col-lg-12" style="margin-top: 10px">
+        <h1 class="title inline">{{lang.Language.calib_aw_R}} 2</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="aw_rech_2">
+      </div>
+      <div class="col-xs-12 col-lg-12" style="margin-top: 10px">
+        <h1 class="title inline">{{lang.Language.data_surface}} 2</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="tsurf_2">
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-12  datacon">
+      <div class="col-xs-6 col-lg-6">
+        <h1 class="title inline">{{lang.Language.calib_delta}}</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="delta">
+      </div>
+      <div class="col-xs-6 col-lg-6">
+        <h1 class="title inline">{{lang.Language.calib_slope}}</h1>
+        <input type="number" class="col-xs-12 col-lg-12 text-center databox tsurface" formControlName="slope">
+      </div>
+    </div>
+  </form>
+  <div class="col-xs-12 col-lg-12 dataconW" style="margin-top: 0">
+        <div class="col-xs-12 col-lg-12 text-center" [ngClass]="btn_start" (click)="onCalib()"><h2>Calibrate surface temperature</h2></div>
+  </div>
+
+
+
+
+
+  <p *ngFor="let data of ValuesTop" class="col-xs-12 col-lg-12">
+    {{data.key}} = {{data.value | number: '1.3'}}
+  </p>
+
+  <div class="col-xs-12 col-lg-12 dataconW" style="margin-top: 0">
+    <div class="col-xs-12 col-lg-12 text-center" [ngClass]="btn_start" appStartBtn (click)="StartMeasure()" tabindex="1" #b1><h2>{{measureButton}}</h2></div>
+  </div>
+
+  <label for="">AW delta</label>
+  <div tabindex="0"(click)="onClickSlider(8,$event)" #deltaaw>
+    <mat-slider  MatSlider class="slider"  min="{{ValueMinTemp}}" max="{{ValueMaxTemp}}" step="0.1" [value]="awdelta" (input)="onClickSlider(8,null,+$event.value)"  tickInterval="0.1">
+    </mat-slider><h3>{{awdelta | number: '1.1-1'}}</h3>
+  </div>
+  <label for="">AW slope</label>
+  <div tabindex="1"(click)="onClickSlider(9,$event)" #slopeaw>
+    <mat-slider  MatSlider class="slider"  min="{{ValueMinSlope}}" max="{{ValueMaxSlope}}" step="0.001" [value]="awslope" (input)="onClickSlider(9,null,+$event.value)"  tickInterval="0.001">
+    </mat-slider><h3>{{awslope | number: '1.3-3'}}</h3>
+  </div>
+
+  <label for="">Surface T shift</label>
+  <div tabindex="0"(click)="onClickSlider(0,$event)" #b2>
+    <mat-slider  MatSlider class="slider"  min="{{ValueMinTemp}}" max="{{ValueMaxTemp}}" step="0.1" [value]="tvalue" (input)="onClickSlider(0,null,$event.value)"  tickInterval="0.1">
+    </mat-slider><h3>{{tvalue | number: '1.1-1'}}</h3>
+  </div>
+
+  <label for="">Surface T slope</label>
+  <div tabindex="1"(click)="onClickSlider(6,$event)" #bslopesurface>
+    <mat-slider  MatSlider class="slider"  min="{{ValueMinSlope}}" max="{{ValueMaxSlope}}" step="0.001" [value]="stvalue" (input)="onClickSlider(6,null,$event.value)"  tickInterval="0.001">
+    </mat-slider><h3>{{stvalue | number: '1.3-3'}}</h3>
+  </div>
+
+  <label for="">Mirror T shift</label>
+  <div tabindex="1"(click)="onClickSlider(1,$event)" #b3>
+    <mat-slider  MatSlider class="slider"  min="{{ValueMinTemp}}" max="{{ValueMaxTemp}}" step="0.1" [value]="mvalue" (input)="onClickSlider(1,null,$event.value)"  tickInterval="0.1">
+    </mat-slider><h3>{{mvalue | number : '1.1-1'}}</h3>
+  </div>
+
+  <label for="">Mirror T slope</label>
+  <div tabindex="1"(click)="onClickSlider(5,$event)" #bslopemirror>
+    <mat-slider  MatSlider class="slider"  min="{{ValueMinSlope}}" max="{{ValueMaxSlope}}" step="0.001" [value]="msvalue" (input)="onClickSlider(5,null,$event.value)"  tickInterval="0.001">
+    </mat-slider><h3>{{msvalue | number : '1.3-3'}}</h3>
+  </div>
+
+  <label for="">Infrared shift</label>
+  <div tabindex="1"(click)="onClickSlider(2,$event)" #b4>
+    <mat-slider  MatSlider class="slider"  min="-100" max="100" step="5" [value]="ivalue" (input)="onClickSlider(2,null,$event.value)"  tickInterval="5">
+    </mat-slider><h3>{{ivalue}}</h3>
+  </div>
+
+  <!--<label for="">Infrared slope</label>
+  <div tabindex="1"(click)="onClickSlider(10,$event)" #slopeinfrared>
+    <mat-slider  MatSlider class="slider"  min="{{InfraredSlope}}" max="{{InfraredSlope}}" step="0.001" [value]="msvalue" (input)="onClickSlider(10,null,$event.value)"  tickInterval="0.001">
+    </mat-slider><h3>{{msvalue | number : '1.3-3'}}</h3>
+  </div>-->
+
+  <label for="">Buzz frequency</label>
+  <div tabindex="1"(click)="onClickSlider(3,$event)" #b5>
+    <mat-slider  MatSlider class="slider"  min="100" max="5000" step="100" [value]="bvalue" (input)="onClickSlider(3,null,$event.value)"  tickInterval="100">
+    </mat-slider><h3>{{bvalue}}</h3>
+  </div>
+
+  <label for="">Lcd frequency</label>
+  <div tabindex="1"(click)="onClickSlider(4,$event)" #b6>
+    <mat-slider  MatSlider class="slider"  min="50" max="1000" step="50" [value]="lvalue" (input)="onClickSlider(4,null,$event.value)"  tickInterval="50">
+    </mat-slider><h3>{{lvalue}}</h3>
+  </div>
+
+  <label for="">Xi limit</label>
+  <div tabindex="1"(click)="onClickSlider(7,$event)" #b7>
+    <mat-slider  MatSlider class="slider"  min="0" max="100" step="5" [value]="xivalue" (input)="onClickSlider(7,null,$event.value)"  tickInterval="5">
+    </mat-slider><h3>{{xivalue}}</h3>
+  </div>
+
+  <label for="">Lcd i2c ID</label>
+  <div tabindex="1">
+    <input type="text" value={{lcdidvalue}} (keyup)="updateLcd(lcdid.value)" #lcdid>
+  </div>
+
+  <label for="">Sample temperature</label>
+  <div tabindex="1">
+    <input type="text" value={{sampletempvalue}} (keyup)="sampleTemperature(sampletemp.value)" #sampletemp>
+  </div>
+
+  <label for="">Surface Temperature avg samples</label>
+  <div tabindex="1">
+    <input type="text" value={{tmiravgsample}} (keyup)="setTmirAvgSample(tmiras.value)" #tmiras>
+  </div>
+  <label for="">Surface Temperature avg frequency</label>
+  <div tabindex="1">
+    <input type="text" value={{tmiravgfreq}} (keyup)="setTmirAvgFreq(tmirfs.value)" #tmirfs>
+  </div>
+
+  <label for="">Threshold reflexion</label>
+  <div tabindex="1">
+    <input type="text" value={{threflexion}} (keyup)="setThReflexion(thref.value)" #thref>
+  </div>
+
+  <label for="">Mirror autoshift temperature</label>
+  <div tabindex="1">
+    <input type="checkBox" [checked]="autoshiftval" (change)="setAutoshiftmirror(autosm.checked)" #autosm>
+  </div>
+
+  <div class="col-xs-12 datacon" style="padding: 0; display: none" >
+    <canvas id="myChart" class="graph" width="400" height="320"  ></canvas>
+  </div>
+
+  <!--<p *ngFor="let data of ValueBottom" class="col-xs-12 col-lg-12">
+    {{data.key}} = {{data.value}}
+  </p> -->
+
+  <div class="col-xs-12 col-lg-12 dataconW">
+    <div class="col-xs-6 text-center mainMenu" routerLink="/menu" tabindex="0" #b8><h2>{{lang.Language.btn_menu}}</h2></div>
+  </div>
+
+</div>

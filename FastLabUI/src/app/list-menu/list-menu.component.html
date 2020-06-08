@@ -1,0 +1,56 @@
+
+
+    <div class="col-xs-12">
+        <table class=" table tableHead">
+            <tr class="">
+              <td class="col-xs-3 databox text-center">
+               {{lang.Language.list_name}}
+              </td>
+              <td class=" col-xs-3 databox text-center">
+                {{lang.Language.list_date}}
+              </td>
+              <td class=" col-xs-3 databox text-center" >
+                {{lang.Language.list_aw}}
+              </td>
+              <td  class=" col-xs-3 databox text-center" style="font-size: 17px;">
+                {{lang.Language.list_temperature}}
+              </td>
+         </tr>
+       </table>
+  </div>
+    <div *ngFor="let elem of getPage()" class="col-xs-12">
+        <table class=" table tableVal">
+        <tr class="">
+          <td class="col-xs-3 databox text-center">
+            <input type="text">
+          </td>
+          <td class="col-xs-3 databox text-center">
+            {{elem.date * 1000 | date:'d/M/yy [H:mm]'}}
+          </td>
+          <td class="col-xs-3 databox text-center">
+            {{elem.aw/1000 | number : '1.3-3'}}
+          </td>
+          <td class="col-xs-3 databox text-center">
+            {{elem.t_surface/100 | number : '1.2-2'}} °C
+          </td>
+        </tr>
+      </table>
+    </div>
+     <div class="col-xs-3 col-mds-3"></div>
+        <div class="col-xs-2 col-md-2 " *ngFor="let point of pages; let i of index" (click)="page = i">
+           <div class="col-xs-12 col-md-12 pagePoint text-center" [ngClass]="{'PpActive': i === page}" style="margin-left:5px;" ></div>
+         </div>
+    <div class="col-xs-12 col-lg-12 dataconW">
+          <div class="col-xs-2 col-lg-2 text-center pageBtn " (click)="onPageDown()" tabindex="1" #b1><h4><i class="fa fa-arrow-left" aria-hidden="true"></i></h4></div>
+          <div class="col-xs-2 col-lg-2 text-center pageBtn " (click)="onPageUp()" tabindex="2" #b2><h4><i class="fa fa-arrow-right" aria-hidden="true"></i></h4></div>
+          <div class="col-xs-2 listMenu" tabindex="3" #b3  routerLink="/mesurement">
+            <div class="square">
+              <img draggable="false" src="\assets\img\Aw.png" class="imgScuare">
+            </div>
+          </div>
+          <div class="col-xs-3 col-lg-3 text-center mainMenu" routerLink="/menu" tabindex="4" #b4><h2>{{lang.Language.btn_menu}}</h2></div>
+    </div>
+
+
+
+

@@ -1,0 +1,43 @@
+﻿  Validating sources
+  Copying sources remotely to '172.22.1.203'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  ad595.c
+  ad7714.c
+  addc.c
+  aw.c
+  board.c
+  boarddef.c
+  boot.c
+  button.c
+  buzzer.c
+  calibration.c
+  ComPort_Linux.c
+  conv_ascii.c
+  ext_calib.c
+  fan.c
+  HD44780.c
+  helpers.c
+  i2c.c
+  ini_file.c
+  lcd.c
+  main.c
+  MePort_Linux.c
+  MeCom.c
+  MeCRC16.c
+  MeFrame.c
+  MeInt.c
+  MeVarConv.c
+  noyau_temps.c
+  oldmain.c
+  opt.c
+  peltier.c
+  pttemp.c
+  sensors.c
+  shared.c
+  ssj.c
+  vardef.c
+  web.c
+  Linking objects
+  App.vcxproj -> C:\cprogs\theo\Server_Marco_newBoard_1.3\App\bin\ARM\Debug\App.out

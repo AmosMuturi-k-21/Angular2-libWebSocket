@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <LocalLibPath>C:\ShanSong\MyDevelop\freelancing\RPI3_Sensors\Server\App\bin\ARM\Debug\App.out</LocalLibPath>
+  <ObjPaths>C:\ShanSong\MyDevelop\freelancing\RPI3_Sensors\Server\App\obj\ARM\Debug\</ObjPaths>
+  <Configuration>Debug</Configuration>
+  <Platform>ARM</Platform>
+</Project>

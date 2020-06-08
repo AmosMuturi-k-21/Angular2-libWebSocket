@@ -1,0 +1,40 @@
+<span *ngIf="alertBtn || salts">
+  <div class="col-xs-12 col-lg-3 alert">
+  <h4 class="alertTitle">{{lang.Language.alert_title}}<i class="fa fa-exclamation-triangle pull-right" aria-hidden="true"></i></h4>
+  <h2>{{alertMsg}}</h2>
+  <div class="col-xs-12 col-lg-12 dataconW">
+    <div class="col-xs-1 col-md-1"></div>
+
+    <span *ngIf="alertBtn">
+          <div class="col-xs-5 col-md-5 text-center okBtn" (click)="onOk()" tabindex="98" #bok><h2>OK</h2></div>
+    <div class="col-xs-5 col-md-5 text-center cancelBtn"  (click)="onCancel()" tabindex="99" #bcancel><h2>Cancel</h2></div>
+    </span>
+
+    <span *ngIf="salts">
+      <table class="table tableHead">
+        <thead><td></td></thead>
+        <tbody>
+          <tr *ngFor="let salt of saltPage,  let i = index">
+            <td class="col-xs-1 text text-center btnSalt">
+               {{sNum*sPage+i+1}}
+            </td>
+             <td class="col-xs-3 text-center btnSalt" #saltRef [tabindex]="2+i" (click)="onSalt(salt,sNum*sPage+i+1)">
+               {{salt}}
+             </td>
+          </tr>
+        </tbody>
+       </table>
+       <div class="col-xs-3 col-lg-2 text-center  pageBtn " (click)="onPageDown()" tabindex="1" #b1><h2><i class="fa fa-arrow-left" aria-hidden="true"></i></h2></div><div class="col-xs-3 col-lg-2 text-center  pageBtn " (click)="onPageUp()" tabindex="2" #b2><h2><i class="fa fa-arrow-right" aria-hidden="true"></i></h2></div><div class="col-xs-6 col-md-6 text-center cancelBtn"  (click)="onCancel()" tabindex="99" #bcancel2><h2>Cancel</h2></div>
+    </span>
+  </div>
+</div>
+</span>
+
+<div *ngIf="!alertBtn" class="col-xs-12 col-lg-12 col-xl-12 alert-2">
+  <h6 class="alertTitle-2">{{lang.Language.alert_title}}<i class="fa fa-exclamation-triangle pull-right" aria-hidden="true"></i></h6>
+  <h6 class="alertMsg">{{alertMsg}}</h6>
+</div>
+
+
+
+

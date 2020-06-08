@@ -1,0 +1,12 @@
+
+.btnCustom
+{
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.btnCustom:hover
+{
+  background-color: #65635a;
+}
+

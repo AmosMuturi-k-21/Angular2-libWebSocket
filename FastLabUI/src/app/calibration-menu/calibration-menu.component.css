@@ -1,0 +1,80 @@
+.dataconW {border-radius: 10px;
+  padding:5px; background-color: white; height:auto;
+  position: fixed;
+  top:727px;}
+.mainMenu {background-color: #bcbab1; color: white; border-radius: 10px; height: 60px; vertical-align: middle;width: 100%; cursor: pointer;
+}
+
+.mainMenu:hover {background-color: #65635a}
+.mainMenu:focus {background-color: #65635a}
+
+.col-xs-8 h2 {color: white; margin-top: 100px;}
+img {display: block; width: 100px; margin: auto; margin-top: 50px;}
+
+@media (min-width: 500px) {
+
+  .dataconW {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    height: auto;
+    position: relative;
+    top: 0px;
+    margin-top: 100px;
+  }
+}
+
+.datacon { border: solid white 3px; border-radius: 10px; padding-top: 10px;
+  padding-bottom: 10px;}
+
+.title {color: #727060; margin: 0; font-size: 1em; font-weight: bold}
+
+.databox {color: black; background-color: white; border-radius: 5px;text-align: center; margin-top: 10px}
+
+.aw,.tsurface{
+  font-size: 2em;
+  transition: all 0.2s;
+}
+
+.Utext
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.centered
+{
+  padding: 10px;
+  text-align: center;
+}
+
+
+.start {
+  background-color:  #dbe793;
+  color: white;
+  border-radius: 10px;
+  height: 60px;
+  border-right: solid 5px white;
+  cursor: pointer;}
+.start:hover {background-color: #7e8a53}
+.start:focus {background-color: #7e8a53}
+
+.stop:hover {background-color: #953126}
+.stop:focus {background-color: #953126}
+.stop {
+  background-color: #e74935;
+  color: white;
+  border-radius: 10px;
+  height: 60px;
+  border-right: solid 5px white;
+  cursor: pointer;
+
+}
+
+h2
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+

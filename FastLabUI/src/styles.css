@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*html, body {margin: 0; height: 100%; overflow: hidden}*/
+
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.listMenu {background-color: #bcbab1; color: white; border-radius: 10px; height: 60px; vertical-align: middle; cursor: pointer;
+  border-right: 5px solid white;
+}
+.listMenu:focus {background-color: #65635a}
+.listMenu:hover {background-color: #65635a}
+
+.imgList
+{
+  position: relative;
+  width: 100%;
+}
+
+.square
+{
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+
+}
+.imgScuare {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height:100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  padding: 10px;
+}
+
+.padding {padding: 10px; line-height: 1.2em}
+
+.colored-1
+{
+  background-color: rgb(0,112,192);
+
+}
+.colored-1:hover
+{
+  background-color: rgb(0, 52, 105);
+  cursor: pointer;}
+.colored-1:focus
+{
+  background-color: rgb(0, 52, 105);
+
+}
+
+.colored-2
+{
+  background-color: rgb(255,192,0 );
+  cursor: pointer;
+}
+.colored-2:hover
+{
+  background-color: rgb(170, 123, 0);
+}
+.colored-2:focus
+{
+  background-color:  rgb(255,192,0 );
+}
+
+
+.colored-3
+{
+  background-color: rgb(17,233,115 );
+  cursor: pointer;
+}
+.colored-3:hover
+{
+  background-color: rgb(17, 168, 84);
+}
+.colored-3:focus
+{
+  background-color:  rgb(17, 168, 84);
+}
+
+.colored-4
+{
+  background-color: rgb( 178,8,196 );
+  cursor: pointer;
+}
+.colored-4:hover
+{
+  background-color: rgb(102, 8, 120);
+}
+.colored-4:focus
+{
+  background-color:    rgb(102, 8, 120);
+}
+
+
+/* btn */
+
+.btnSalt {
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: white;
+  transition: background 0.3s;
+  margin-top: 2px;
+  border: 2px solid #bcbab1;
+  color: black;
+}
+
+.btnSalt:focus {
+  background-color: rgb(239, 255, 220);
+}
+
+/* Disable user select on all elements */
+* {
+  -webkit-touch-callout:none;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}

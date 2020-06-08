@@ -1,0 +1,100 @@
+
+<div class="col-xs-1 col-lg-1"></div>
+<div class="col-xs-10 col-lg-10">
+
+  <label for="">{{lang.Language.ad_opt_sample_temp}}</label>
+  <div tabindex="1"(click)="onClickSlider($event)" #temperature>
+    <mat-slider  MatSlider class="slider"  min="20" max="25" step="1" [value]="value" (input)="input$.next($event.value)"  tickInterval="1"></mat-slider><h3>{{value}}</h3>
+  </div>
+
+  <label for="" class="">{{lang.Language.ad_opt_sample}}</label>
+  <div class="col-xs-12 colored-1 box">
+  <div class="col-xs-5 lowPad">
+    <p class="title" for="">{{lang.Language.ad_opt_name}}</p>
+    <input class="form-control" maxlength="6" [value]="buttons[0].name" [(ngModel)]="buttons[0].name" name="mesure"  #name1>
+  </div>
+
+    <div class="col-xs-3 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_mode}}</p>
+      <select class="form-control" [value]="buttons[0].comparation" [(ngModel)]="buttons[0].comparation" #select1 (click)="onClickSelect(select1,MenuType.comparation_mode_1,$event)"  name="mesure">
+        <option *ngFor="let elem of Rpi_COMPARATION_MODE_list; let i = index">{{elem}}</option>
+      </select>
+    </div>
+
+  <div class="col-xs-4 lowPad">
+    <p class="title" for="">{{lang.Language.data_aw}}</p>
+    <input class="form-control" [value]="buttons[0].aw" maxlength="9" [(ngModel)]="buttons[0].aw" style="font-size: 15px"   name="mesure" #aw1>
+  </div>
+</div>
+
+  <div class="col-xs-12 colored-2 box">
+    <div class="col-xs-5 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_name}}</p>
+      <input class="form-control" maxlength="6" [value]="buttons[1].name"   name="mesure" [(ngModel)]="buttons[1].name" #name2>
+    </div>
+
+    <div class="col-xs-3 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_mode}}</p>
+      <select class="form-control" [value]="buttons[1].comparation"  name="mesure" #select2 [(ngModel)]="buttons[1].comparation" (click)="onClickSelect(select2,MenuType.comparation_mode_1,$event)">
+        <option *ngFor="let elem of Rpi_COMPARATION_MODE_list; let i = index" value="{{elem}}">{{Rpi_COMPARATION_MODE_list[i]}}</option>
+      </select>
+    </div>
+
+    <div class="col-xs-4 lowPad" >
+      <p class="title" for="">{{lang.Language.data_aw}}</p>
+      <input class="form-control" [value]="buttons[1].aw"  maxlength="9" name="mesure" #aw2  style="font-size: 15px" [(ngModel)]="buttons[1].aw">
+    </div>
+  </div>
+
+  <div class="col-xs-12 colored-3 box">
+    <div class="col-xs-5 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_name}}</p>
+      <input class="form-control" maxlength="6" [value]="buttons[2].name"   name="mesure" [(ngModel)]="buttons[2].name" #name3>
+    </div>
+
+    <div class="col-xs-3 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_mode}}</p>
+      <select class="form-control" [value]="buttons[2].comparation"  name="mesure" #select3 [(ngModel)]="buttons[2].comparation" (click)="onClickSelect(select3,MenuType.comparation_mode_3,$event)">
+        <option *ngFor="let elem of Rpi_COMPARATION_MODE_list; let i = index" value="{{elem}}">{{Rpi_COMPARATION_MODE_list[i]}}</option>
+      </select>
+    </div>
+
+    <div class="col-xs-4 lowPad">
+      <p class="title" for="">{{lang.Language.data_aw}}</p>
+      <input class="form-control"  [value]="buttons[2].aw" maxlength="9"   name="mesure"  style="font-size: 15px" #aw3 [(ngModel)]="buttons[2].aw">
+    </div>
+  </div>
+
+  <div class="col-xs-12 colored-4 box">
+    <div class="col-xs-5 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_name}}</p>
+      <input class="form-control" maxlength="6" [value]="buttons[3].name"  name="mesure" #name4 [(ngModel)]="buttons[3].name">
+    </div>
+
+    <div class="col-xs-3 lowPad">
+      <p class="title" for="">{{lang.Language.ad_opt_mode}}</p>
+      <select class="form-control" [value]="buttons[3].comparation"  name="mesure" #select4 [(ngModel)]="buttons[3].comparation" (click)="onClickSelect(select4,MenuType.comparation_mode_4,$event)">
+        <option *ngFor="let elem of Rpi_COMPARATION_MODE_list; let i = index" value="{{elem}}">{{Rpi_COMPARATION_MODE_list[i]}}</option>
+      </select>
+    </div>
+
+    <div class="col-xs-4 lowPad">
+      <p class="title" for="">{{lang.Language.data_aw}}</p>
+      <input class="form-control" [value]="buttons[3].aw"  maxlength="9"  name="mesure"  style="font-size: 15px" #aw4 [(ngModel)]="buttons[3].aw">
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <p class="title" style="padding: 10px">{{lang.Language.ad_opt_info}}</p>
+  </div>
+</div>
+
+
+
+
+<div class="col-xs-12 col-lg-12 dataconW">
+  <table class="col-xs-12">
+    <tr>
+      <td class="col-xs-12 text-center mainMenu" routerLink="/menu" tabindex="1" #b1><h2>{{lang.Language.btn_menu}}</h2></td>
+    </tr>
+  </table>
+</div>

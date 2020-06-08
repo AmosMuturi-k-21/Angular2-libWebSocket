@@ -1,0 +1,71 @@
+.dataconW {border-radius: 10px;
+  padding:5px; background-color: white; height:auto;
+  position: fixed;
+  top:727px;}
+.mainMenu {background-color: #bcbab1; color: white; border-radius: 10px; height: 60px; vertical-align: middle;width: 100%; cursor: pointer;
+}
+.mainMenu:hover {background-color: #65635a}
+.mainMenu:focus {background-color: #65635a}
+
+input {padding: 10px; height: 50px; font-weight: bold; text-align: center}
+input:focus {background-color: #dbe793}
+
+select {padding: 10px; height: 50px; font-weight: bold; text-align: center}
+select:focus {background-color: #dbe793}
+option {text-align: center}
+label {font-size: 1.5em; margin-top: 20px; color: white; display: block;}
+
+@media (min-width: 500px){
+
+  .dataconW {border-radius: 10px;
+    padding:5px; background-color: white; height:auto;
+    position: relative;
+    top:0px;
+    margin-top: 100px;} }
+
+.slider { width: 80%;
+  margin-right: 30px;
+  margin-top: -10px;}
+.slider:focus {border: solid 2px #dbe793; border-radius: 10px;}
+
+
+h3 {color: white; display: inline-block; margin-top: 0; margin-bottom: 0;}
+
+
+.title {color: white; font-size: 1em}
+
+h2
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.box
+{
+ padding: 10px;
+ border-radius: 10px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 15px!important;
+  height: 32px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+select {
+  text-align: center;
+  padding-left: 26px!important;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  height: 32px;
+}
+ p {
+   text-align: center;
+ }
+
+ .lowPad {
+   padding: 5px;
+ }

@@ -1,0 +1,16 @@
+
+.col-xs-8 {border: solid 5px white; border-radius: 10px;  color: white; cursor: pointer; margin-top: 40px;}
+.col-lg-8 {border: solid 5px white; border-radius: 10px;  color: white; cursor: pointer; margin-top: 40px;}
+img {margin-left: 15px; vertical-align: middle; }
+h2 { font-size: 25px;}
+@media (max-width: 500px ){.first { margin-top: 70px; } .last {margin-bottom: 30px;}}
+@media (min-width: 510px ){.last {margin-bottom: 30px;}}
+
+.container {top: -13%; transform: translateY(13%);}
+.col-xs-8:hover {background-color: #65635a;}
+.col-xs-8:focus {background-color: #65635a;}
+
+
+
+
+

@@ -1,0 +1,247 @@
+﻿[
+{
+   "name":"English",
+
+   "main_menu_btn_mesure": "Measurement",
+   "main_menu_btn_list": "Measurement list",
+   "main_menu_btn_calibration": "Calibration",
+   "main_menu_btn_options": "Options",
+   "main_menu_btn_advance": "Advanced options",
+
+
+   "start": "START",
+   "stop": "STOP",
+   "btn_menu": "Menu",
+   "alert_head_down":"Error. Please pull down the measurement head. Operation aborted.",
+   "alert_start":"Measure started.",
+   "alert_stop":"Operation aborted by user.",
+   "alert_title":"Event log",
+   "data_surface":"SURFACE TEMPERATURE",
+   "data_sensor":"Opt. Sensor",
+   "data_mirror":"Mirror",
+   "data_time":"Time",
+   "data_peltier":"Peltier",
+   "data_aw":"Aw",
+   "data_waterA":"WATER ACTIVITY",
+   "data_now":"Now",
+   "data_max":"Max",
+   "data_dif":"Dif",
+   "data_min":"Min",
+   "data_null":"NaN",
+   "graph_title":"Surface temperature",
+   "graph_title_obj":"Sample temperature",
+
+
+   "list_aw":"Aw",
+   "list_date":"Date",
+   "list_temperature":"Surface temperature",
+   "list_name":"Name",
+   "btn_back":"Back",
+   "btn_nest":"Next",
+
+
+    "calib_aw_M":"C measure",
+    "calib_aw_R":"C reach",
+    "calib_slope":"Slope",
+    "calib_delta":"Delta",
+
+   "calib_txt_off":"Press start to initialize the calibration procedure.",
+   "calib_txt_on":"Calibrating...",
+   "calib_txt_aw_calc":"AW CALCULATED",
+   "calib_txt_aw_salt":"AW SALT SAMPLE",
+   "calib_txt_warn":"Warning measurement running, starting a calibration will abort the measurement.",
+   "alert_cal_started":"Calibration started.",
+   "alert_salt_1":"Please put the GBX salt in the sample zone and press 'OK'.",
+   "alert_salt_2":"Please put the second GBX salt in the sample zone and press 'OK'.",
+   "alert_err_salt":"Error. salt used are of the same type. Operation aborted.",
+   "alert_err_closeSalt":"Error. Salt used are too similar. Operation aborted.",
+   "alert_err":"Error. Operation aborted.",
+   "alert_err_mirror":"Please clean the mesurement mirror. Operation aborted.",
+   "alert_cal_end":"Calibration ended.",
+   "alert_measure_end":"Measurement ended.",
+   "alert_measure_end_fan":"Measurement ended, fan still running.",
+   "alert_measure_error":"Measurement error: please clean the mirror.",
+   "alert_btn_ok":"Ok",
+   "alert_btn_cancel":"Cancel",
+
+
+  "opt_fan_speed":"Fan speed",
+  "opt_mode":"Measurement mode",
+  "opt_kinetic":"Kinetic mode",
+  "opt_calibration":"Calibration mode",
+  "opt_autoStart":"Auto start",
+  "opt_lenguage":"Language",
+
+  "opt_select_measure" : [
+      "2_5m",
+      "3_10m",
+      "6_30m",
+      "fix_10_m",
+      "2_5_flash",
+      "3_10_flash",
+      "6_30_flash",
+      "10_flash"
+                  ],
+   "opt_select_kinetic":[
+                          "15m_2_30",
+                          "30m_2_30",
+                          "1h_15",
+                          "2h_10",
+                          "4h_15",
+                          "8h_30",
+                          "cont_60",
+                          "cont_2_30"
+                        ],
+   "opt_select_calib":[
+                        "1p_1l",
+                        "1p_2l",
+                        "1p_3l",
+                        "1p_4l",
+                        "1p_5l",
+                        "1p_6l",
+                        "2p_1l",
+                        "2p_2l",
+                        "2p_3l",
+                        "2p_4l",
+                        "2p_5l",
+                        "2p_6l"
+                      ],
+   "opt_select_autostart":[
+                            "off",
+                            "measure_1",
+                            "measure_2",
+                            "kinetic_1",
+                            "kinetic_2"
+                            ],
+"ad_opt_sample_temp":"Sample temperature",
+"ad_opt_sample":"Sample presets",
+"ad_opt_name":"Sample name",
+"ad_opt_aw":"Sample AW",
+"ad_opt_mode":"Comparation",
+"ad_opt_info":"Here you can create some custom presets,to be then selected in the measurement menu and compared with the live measure. Choose the name,value and if the measure must likely be miron or major to the preset."
+
+ },
+{
+   "name":"Italiano",
+
+   "main_menu_btn_mesure": "Misurazione",
+   "main_menu_btn_list": "Lista misurazioni",
+   "main_menu_btn_calibration": "Calibrazione",
+   "main_menu_btn_options": "Opzioni",
+    "main_menu_btn_advance": "Opazioni avanzate",
+
+
+   "start": "INIZIA",
+   "stop": "FERMA",
+   "btn_menu": "Menù",
+   "alert_head_down":"Errore. Abbassare la testina di misurazione per favore. Operazione terminata.",
+   "alert_start": "Misurazione iniziata.",
+   "alert_stop":"Operazione terminata dall'utente.",
+   "alert_title":"Registro eventi",
+   "data_surface":"TEMPERATURA SUPERFICIE",
+   "data_sensor":"Sensore ott.",
+   "data_mirror":"Specchio",
+   "data_time":"Tempo",
+   "data_peltier":"Peltier",
+   "data_aw":"Aw",
+   "data_waterA":"ATTIVITÀ ACQUA",
+   "data_now":"Ora",
+   "data_max":"Max",
+   "data_dif":"Dif",
+   "data_min":"Min",
+   "data_null":"NaN",
+   "graph_title":"Temperatura superficie",
+   "graph_title_obj": "Temperature sample",
+
+
+   "list_aw":"Aw",
+   "list_date":"Data",
+   "list_temperature":"Temperatura superficie",
+   "list_name":"Nome",
+   "btn_back":"Indietro",
+   "btn_nest":"Avanti",
+
+
+     "calib_aw_M":"C misurata",
+     "calib_aw_R":"C obbiettivo",
+     "calib_slope":"Pendenza",
+     "calib_delta":"Delta",
+
+   "calib_txt_off":"Premi 'Inizia' per cominciare la proceura di calibrazione.",
+   "calib_txt_on":"Calibrando...",
+   "calib_txt_aw_calc":"AW CALCOLATO.",
+   "calib_txt_aw_salt":"AW SALE CAMPIONE",
+   "calib_txt_warn":"Attenzione misuraizone in corso, iniziare una calibrazione arresterà la misurazione.",
+   "alert_cal_started":"Calibrazione iniziata.",
+   "alert_salt_1":"Per favore inserire il sale GBX nella zona campioni e premere il tasto 'OK'.",
+   "alert_salt_2":"Per favore inserire il secondo sale GBX nella zona campioni e premere il tasto 'OK'.",
+   "alert_err_salt":"Errore. I sali utilizzati sono dello stesso tipo. Operazione terminata.",
+   "alert_err_closeSalt":"Errore. I sali utilizzati sono troppo simili. Operazione terminata.",
+   "alert_err":"Errore. Operazione terminata.",
+   "alert_err_mirror":"Errore. Per favore pulire lo specchio di misurazione. Operazione terminata.",
+   "alert_cal_end":"Calibrazione terminata.",
+   "alert_measure_end":"Misurazione terminata.",
+   "alert_measure_end_fan":"Misurazione terminata, ventola in funzione.",
+   "alert_measure_error":"Error misurazione: per favore, pulisci lo specchio.",
+   "alert_btn_ok":"Ok",
+   "alert_btn_cancel":"Annulla",
+
+
+  "opt_fan_speed":"Velocità ventola",
+  "opt_mode":"Modalità misurazione",
+  "opt_kinetic":"Modalità cinetica",
+  "opt_calibration":"Modalità calibrazione",
+  "opt_autoStart":"Avvio automatico",
+  "opt_lenguage":"Lingua",
+
+  "opt_select_measure" : [
+      "2_5m",
+      "3_10m",
+      "6_30m",
+      "fix_10_m",
+      "2_5_flash",
+      "3_10_flash",
+      "6_30_flash",
+      "10_flash"
+                    ],
+     "opt_select_kinetic":[
+                            "15m_2_30",
+                            "30m_2_30",
+                            "1h_15",
+                            "2h_10",
+                            "4h_15",
+                            "8h_30",
+                            "cont_60",
+                            "cont_2_30"
+                          ],
+     "opt_select_calib":[
+                          "1p_1l",
+                          "1p_2l",
+                          "1p_3l",
+                          "1p_4l",
+                          "1p_5l",
+                          "1p_6l",
+                          "2p_1l",
+                          "2p_2l",
+                          "2p_3l",
+                          "2p_4l",
+                          "2p_5l",
+                          "2p_6l"
+                        ],
+     "opt_select_autostart":[
+                              "off",
+                              "measure_1",
+                              "measure_2",
+                              "kinetic_1",
+                              "kinetic_2"
+                              ],
+  "ad_opt_sample_temp":"Temperature campione",
+  "ad_opt_sample":"Campioni preimpostati",
+  "ad_opt_name":"Nome campione",
+  "ad_opt_aw":"AW campione",
+  "ad_opt_mode":"comparazione",
+  "ad_opt_info":"Qui puoi creare dei campioni preimpostati,che possono essere poi comparati con la misurazione in tempo reale nel menu misurazione. Scegli il nome,il valore e se la misurazione dovrebbe essere maggiore o minire rispetto al campioone."
+
+ }
+]
+

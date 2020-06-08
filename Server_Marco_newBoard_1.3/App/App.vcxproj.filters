@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="buzzer.c">
+      <Filter>buzzer</Filter>
+    </ClCompile>
+    <ClCompile Include="button.c">
+      <Filter>buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="lcd.c">
+      <Filter>lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="peltier.c">
+      <Filter>peltier</Filter>
+    </ClCompile>
+    <ClCompile Include="sensors.c">
+      <Filter>sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="board.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="shared.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="addc.c">
+      <Filter>addc</Filter>
+    </ClCompile>
+    <ClCompile Include="fan.c">
+      <Filter>fan</Filter>
+    </ClCompile>
+    <ClCompile Include="pttemp.c">
+      <Filter>PTXXXX</Filter>
+    </ClCompile>
+    <ClCompile Include="ad595.c">
+      <Filter>ad595</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="calibration.c">
+      <Filter>calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="aw.c">
+      <Filter>calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="i2c.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="noyau_temps.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="oldmain.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="ad7714.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="conv_ascii.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="HD44780.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="vardef.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="boarddef.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers.c">
+      <Filter>oldcode</Filter>
+    </ClCompile>
+    <ClCompile Include="web.c">
+      <Filter>webcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="opt.c">
+      <Filter>options</Filter>
+    </ClCompile>
+    <ClCompile Include="ssj.c">
+      <Filter>webcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="boot.c">
+      <Filter>boot</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_calib.c">
+      <Filter>calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="ComPort\ComPort_Linux.c">
+      <Filter>Meerstetter TEC\com port</Filter>
+    </ClCompile>
+    <ClCompile Include="MeComAPI\MePort_Linux.c">
+      <Filter>Meerstetter TEC\api</Filter>
+    </ClCompile>
+    <ClCompile Include="MeComAPI\private\MeCom.c">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClCompile>
+    <ClCompile Include="MeComAPI\private\MeCRC16.c">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClCompile>
+    <ClCompile Include="MeComAPI\private\MeFrame.c">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClCompile>
+    <ClCompile Include="MeComAPI\private\MeInt.c">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClCompile>
+    <ClCompile Include="MeComAPI\private\MeVarConv.c">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClCompile>
+    <ClCompile Include="ini_file.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="buzzer">
+      <UniqueIdentifier>{1d20addb-e2f3-45b9-81a7-0af07440a6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{fdc3db71-9e50-4158-8f1a-2cbdaffc6bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="buttons">
+      <UniqueIdentifier>{1ad793f6-f28a-4925-895a-e5f09ff23116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcd">
+      <UniqueIdentifier>{ac38929d-f4a2-44be-9b80-e44870b80fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="peltier">
+      <UniqueIdentifier>{5ef1d1e1-8f54-42d3-a556-a4bdb0eb580a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sensors">
+      <UniqueIdentifier>{6a588f4a-4ae3-448c-babd-56b3cbf93af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addc">
+      <UniqueIdentifier>{7cd34458-650c-4859-8b2f-bffc159ce521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fan">
+      <UniqueIdentifier>{4383fa97-3735-4333-8f99-7c382a910d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PTXXXX">
+      <UniqueIdentifier>{eaaefba7-f8db-438c-8cdc-b80f57ab2b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ad595">
+      <UniqueIdentifier>{840e022d-c973-4f8c-a9bf-59c14394c2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="calibration">
+      <UniqueIdentifier>{b4c459b7-00ba-49b7-954d-55ff12406a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oldcode">
+      <UniqueIdentifier>{448d0dff-33e2-455b-9c0d-bdfb61b37c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webcontrol">
+      <UniqueIdentifier>{05ce8b8e-4855-41b2-9321-32bac57282f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="options">
+      <UniqueIdentifier>{3d729c12-e447-450f-8f0d-f4c377092533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boot">
+      <UniqueIdentifier>{8cda2061-dc35-48e6-8fd7-84af5fab51fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{a03c47e8-6909-4579-8709-9793f9a7ff03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Meerstetter TEC">
+      <UniqueIdentifier>{bfd1c8ee-41bd-486e-adc4-cac97b2c7ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Meerstetter TEC\com port">
+      <UniqueIdentifier>{2b433eae-525e-4b8f-8db8-a65f5a8a5349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Meerstetter TEC\api">
+      <UniqueIdentifier>{759b4fc4-bf15-47f4-bfbc-4d5acb6448a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Meerstetter TEC\api\private">
+      <UniqueIdentifier>{56726106-f99f-4e33-9b57-a82247d6ecec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_z">
+      <UniqueIdentifier>{654ddec2-b093-419b-8386-6dae9ccb6b42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buzzer.h">
+      <Filter>buzzer</Filter>
+    </ClInclude>
+    <ClInclude Include="button.h">
+      <Filter>buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="lcd.h">
+      <Filter>lcd</Filter>
+    </ClInclude>
+    <ClInclude Include="peltier.h">
+      <Filter>peltier</Filter>
+    </ClInclude>
+    <ClInclude Include="sensors.h">
+      <Filter>sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="pins.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="app.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="shared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="board.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="addc.h">
+      <Filter>addc</Filter>
+    </ClInclude>
+    <ClInclude Include="fan.h">
+      <Filter>fan</Filter>
+    </ClInclude>
+    <ClInclude Include="pttemp.h">
+      <Filter>PTXXXX</Filter>
+    </ClInclude>
+    <ClInclude Include="ad595.h">
+      <Filter>ad595</Filter>
+    </ClInclude>
+    <ClInclude Include="calibration.h">
+      <Filter>calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="aw.h">
+      <Filter>calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="HD44780.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="i2c.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="inout.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="options.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="proto.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="protocole_fast.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="SCC2692.H">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="ad7714.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="bb7614.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="vardef.h">
+      <Filter>oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="web.h">
+      <Filter>webcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="opt.h">
+      <Filter>options</Filter>
+    </ClInclude>
+    <ClInclude Include="ssj.h">
+      <Filter>webcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="boot.h">
+      <Filter>boot</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_calib.h">
+      <Filter>calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="ComPort\ComPort.h">
+      <Filter>Meerstetter TEC\com port</Filter>
+    </ClInclude>
+    <ClInclude Include="MeComAPI\MeCom.h">
+      <Filter>Meerstetter TEC\api</Filter>
+    </ClInclude>
+    <ClInclude Include="MeComAPI\MePort.h">
+      <Filter>Meerstetter TEC\api</Filter>
+    </ClInclude>
+    <ClInclude Include="MeComAPI\private\MeCRC16.h">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClInclude>
+    <ClInclude Include="MeComAPI\private\MeFrame.h">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClInclude>
+    <ClInclude Include="MeComAPI\private\MeInt.h">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClInclude>
+    <ClInclude Include="MeComAPI\private\MeVarConv.h">
+      <Filter>Meerstetter TEC\api\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

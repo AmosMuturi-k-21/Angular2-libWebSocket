@@ -1,0 +1,90 @@
+
+<div class="col-xs-1 col-lg-1"></div>
+<div class="col-xs-10 col-lg-10">
+
+
+
+
+  <label for="">{{lang.Language.opt_fan_speed}}</label>
+  <div tabindex="1"(click)="onClickSlider($event)" #b1>
+  <mat-slider  MatSlider class="slider"  min="0" max="100" step="5" [value]="value" (input)="input$.next($event.value)"  tickInterval="1"></mat-slider><h3>{{value}}</h3>
+  </div>
+
+
+  <label for="">{{lang.Language.opt_mode}}</label>
+  <select class="form-control" tabindex="2" name="mesure" (click)="onClickSelect(b2,MenuType.measure_mode,$event)"  #b2>
+    <option *ngFor="let elem of Rpi_MEASURE_MODE_list;let i = index" value="{{elem}}">{{lang.Language.opt_select_measure[i]}}</option>
+    <!-- <option value="0" >2->5 mn</option>
+    <option value="1">3->10 mn</option>
+    <option value="2">6->30 mn</option>
+    <option value="3">Fixed 10 mn</option>
+    <option value="4">2->5 mn + flash</option>
+    <option value="5">3->10 + flash</option>
+    <option value="6">6->30 mn + flash</option>
+    <option value="7">Fixed 10 mn + flash</option> -->
+  </select>
+
+  <label for="">{{lang.Language.opt_kinetic}}</label>
+  <select class="form-control" tabindex="3" name="kinetic" (click)="onClickSelect(b3,MenuType.kinetic_mode,$event)" #b3>
+    <option *ngFor="let elem of Rpi_KINETIC_MODE_list;let i = index" value="{{elem}}">{{lang.Language.opt_select_kinetic[i]}}</option>
+    <!--<option value="0">15 mn (2 mn 30)</option>
+    <option value="1">30 mn (2 mn 30)</option>
+    <option value="2">1 h (5 mn)</option>
+    <option value="3">2 h (10 mn)</option>
+    <option value="4">4 h (15 mn</option>
+    <option value="5">8 h (30 mn)</option>
+    <option value="6">contunuous (60 mn)</option>
+    <option value="7">continu. (2 mn 30)</option>-->
+  </select>
+
+  <label for="">{{lang.Language.opt_calibration}}</label>
+  <select class="form-control" tabindex="3" name="calibration" (click)="onClickSelect(b4,MenuType.calibration_mode,$event)" #b4>
+    <option *ngFor="let elem of Rpi_CALIBRATION_MODE_list;let i = index" value="{{elem}}">{{lang.Language.opt_select_calib[i]}}</option>
+    <!--<option value="0">15 mn (2 mn 30)</option>
+   <option value="1">30 mn (2 mn 30)</option>
+   <option value="2">1 h (5 mn)</option>
+   <option value="3">2 h (10 mn)</option>
+   <option value="4">4 h (15 mn</option>
+   <option value="5">8 h (30 mn)</option>
+   <option value="6">contunuous (60 mn)</option>
+   <option value="7">continu. (2 mn 30)</option>
+   <option value="8">15 mn (2 mn 30)</option>
+   <option value="9">30 mn (2 mn 30)</option>
+   <option value="10">1 h (5 mn)</option>
+   <option value="11">2 h (10 mn)</option>
+   <option value="12">4 h (15 mn</option>-->
+
+ </select>
+
+ <label for="">{{lang.Language.opt_autoStart}}</label>
+ <select class="form-control" tabindex="4" name="auto-start" (click)="onClickSelect(b5,MenuType.autostart,$event)" #b5>
+   <option *ngFor="let elem of Rpi_AUTOSTART_list;let i = index" value="{{elem}}">{{lang.Language.opt_select_autostart[i]}}</option>
+   <!--<option value="1">off</option>
+   <option value="2">measurement mode 1</option>
+   <option value="3">measurement mode 2</option>
+   <option value="4">kinetic mode 1</option>
+   <option value="5">kinetic mode 1</option>-->
+ </select>
+
+ <label for="">{{lang.Language.opt_lenguage}}</label>
+ <select class="form-control" tabindex="5" name="lenguage" (click)="onClickSelect(b6,MenuType.language,$event)" #b6>
+   <option *ngFor="let elem of lang.LanguageList;let i = index" value="{{i}}">{{lang.LanguageList[i]}}</option>
+ </select>
+
+
+</div>
+
+
+
+
+
+   <div class="col-xs-12 col-lg-12 dataconW">
+     <table class="col-xs-12">
+       <tr>
+         <td class="col-xs-12 text-center mainMenu" routerLink="/menu" tabindex="6" #b7><h2>{{lang.Language.btn_menu}}</h2></td>
+       </tr>
+     </table>
+   </div>
+
+
+
